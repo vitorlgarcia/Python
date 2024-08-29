@@ -50,7 +50,7 @@ def teste(b):
     b += 4      # Aqui toda variável criada só existe DENTRO da função.
     c = 2
     print(f"A dentro vale {a}") # a variável "a" é local e tem o valor 8. Não é a mesma que a variável global "a" criada fora da função teste
-    print(f"B dentro vale {b}") # "b" é o parametro que recebeu o numero 5 da variável global e foi somada a ela + 4, passando, então, a valer 8. Ela não existe fora da função
+    print(f"B dentro vale {b}") # "b" é o parametro que recebeu o numero 5 da variável global e foi somada a ela + 4, passando, então, a valer 9. Ela não existe fora da função
     print(f"C dentro vale {c}") # "c" é variavel local que tem valor 2.
 
 
