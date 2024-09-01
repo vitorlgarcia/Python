@@ -4,6 +4,8 @@
 
 # nesse exemplo é criado um módulo em um arquivo python separado, chamado de "uteis.py". Nele será colocado funções criadas. Nesse arquivo "aula.py" será usado o comando import para importar uteis.py e as funções desse arquivo serão chamadas e rodadas no presente arquivo.
 
+# É necessário que os arquivos principal e módulo estejam dentro da mesma pasta para que as funções dos módulos consigam ser importadas para o arquivo principal. Se estiverem em diretórios distintos, o python vai enviar mensagem de erro dizendo que o módulo importado não existe.
+
 import uteis  # módulo criado por mim mesmo
 from matematica import potencia, raizquadrada # módulo matematica criada por mim e funções potencia e raizquadrada chamadas de forma específica
 
