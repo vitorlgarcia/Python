@@ -13,7 +13,7 @@ print("A porção inteira desse numero é {}".format(math.floor(inteiro)))
 
 # Exercicio 13 - Catetos e valor da hipotenusa
 catoposto = float(input("Digite o valor do cateto oposto "))
-catadjacente = float(input("Digite o valor do cateo adjacente "))
+catadjacente = float(input("Digite o valor do cateto adjacente "))
 hipotenusa = ((catoposto ** 2) + (catadjacente ** 2)) ** (1/2)
 print("O valor da hipotenusa é {:.2f}".format(math.hypot(catoposto,catadjacente)))
 print("hipotenusa usando formula é {:.2f}".format(hipotenusa))

@@ -33,6 +33,6 @@ soma = 0
 pa = numero + (10 - 1) * razao # formula da Progressao aritmética. Queremos o somatório dos numeros com inicio X e razão Y. Como quero saber o somatório até o décimo termo, eu coloquei o 10 na formula e a variavel "pa" fica com o valor da décima somatória dessa Progressão. Aí basta colocar esse valor no laço de for para o laço calcular o somatório até chegar nele.
 
 for i in range(numero, (pa + 1), razao): # aqui coloquei o +1 para o ultimo elemento não ser ignorado
-    soma += razao
+    soma += razao # Não está sendo usado para nada, pois o incremento dos termos está sendo feito pelo laço de for
     print(" {} ".format(i), end = " -> ") # comando end serve para não querbrar linha e colocar e ele coloca o que você desejar ao lado.
 print(" ACABOU")
