@@ -1,4 +1,4 @@
-# rie um programa onde o usuário digite uma expressao qualquer que use parênteses. Seu aplicativo deverá analisar se a expressão passada está com os parênteses abertos e fechados na ordem correta
+# Crie um programa onde o usuário digite uma expressao qualquer que use parênteses. Seu aplicativo deverá analisar se a expressão passada está com os parênteses abertos e fechados na ordem correta
 
 lista = []
 expressao = input("Digite a expressão matemática: ")
