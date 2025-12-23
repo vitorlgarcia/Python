@@ -15,13 +15,13 @@ while True:
     lista.append(aluno[:]) # Sempre lembrar da cópia usando fatiamento completo do vetor
     aluno.clear()
 
-    continuar = input("Quer continuar? [S/N]").upper().strip()
+    continuar = input("Quer continuar? [S/N]").upper().strip()[0]
     if continuar in "N":
         break
 
 print("=-" * 40)
 
-print(f"{"No.":<4}{"NOME":<10}{"MEDIA":>8}") # ":<4" significa 4 caracteres alinhado a esquerda
+print(f'{"No.":<4}{"NOME":<10}{"MEDIA":>8}') # ":<4" significa 4 caracteres alinhado a esquerda
 print("-" * 25)
 
 for i, valor in enumerate(lista):
