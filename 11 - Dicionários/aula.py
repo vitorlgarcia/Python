@@ -11,7 +11,7 @@ print(pessoas)
 
 print(pessoas['nome'])  # Gustavo
 
-print(f'O {pessoas['nome']} tem {pessoas["idade"]} anos de idade') # O Gustavo tem 22 anos de idade
+print(f"O {pessoas['nome']} tem {pessoas['idade']} anos de idade") # O Gustavo tem 22 anos de idade
 
 print(pessoas.values()) # ['Gustavo', 'M', 22]
 print(pessoas.keys()) # ['nome', 'sexo', 'idade']
