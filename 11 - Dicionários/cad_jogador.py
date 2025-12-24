@@ -24,7 +24,7 @@ for k, v in jogador.items():
 
 print("=-" * 30)
 
-print(f"O jogador {jogador["nome"]} jogou {partidas} partidas") 
+print(f"O jogador {jogador['nome']} jogou {partidas} partidas") 
 
 for i, n in enumerate(jogador['gols']):     # laço de for que fará a iteração da lista contida dentro do dicionário. Não esquecer do "enumerate" para que seja apresentado o número do índice e valor de cada item da lista
     print(f"Na partida {i+1}, fez {n} gols")
