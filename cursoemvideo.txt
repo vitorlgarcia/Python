@@ -1,2 +1,3 @@
 jose;55
 vitor;31
+lucas;26
