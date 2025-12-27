@@ -2,12 +2,12 @@
 
 
 c = ('\033[m',  # 0 - Sem cores
-     '\033[0;30;41m' # 1 - Vermelho
-     '\033[0;30;42m' # 2 - Verde
-     '\033[0;30;43m' # 3 - Amarelo
-     '\033[0;30;44m' # 4 - Azul
-     '\033[0;30;45m' # 5 - Roxo
-     '\033[0;30'     # 6 - Branco
+     '\033[0;30;41m', # 1 - Vermelho
+     '\033[0;30;42m', # 2 - Verde
+     '\033[0;30;43m', # 3 - Amarelo
+     '\033[0;30;44m', # 4 - Azul
+     '\033[0;30;45m', # 5 - Roxo
+     '\033[7;30m'     # 6 - Branco
      )
 
 def ajuda(coman):
@@ -20,7 +20,7 @@ def titulo(msg, cor=0):
     tamanho = len(msg) + 4
     print(c[cor], end='')
     print("~" * tamanho)
-    print(f" msg")
+    print(f"  {msg}")
     print("~" * tamanho)
     print(c[0], end='')
 
@@ -35,4 +35,4 @@ while True:
     else:
         ajuda(comando)
 
-titulo("Até logo", 1)
+titulo("Até logo", 2)
