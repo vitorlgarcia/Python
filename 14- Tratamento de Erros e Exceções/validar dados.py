@@ -8,7 +8,7 @@ def leiaint(msg):
             print("\033[31mErro! Formato de número não aceito. Digite novamente\033[m")
         
         except KeyboardInterrupt:
-            print("Entrada de dados interrompida pelo usuário.")
+            print("\033[31mEntrada de dados interrompida pelo usuário.\033[m")
             break
 
         else:
