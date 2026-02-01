@@ -1,4 +1,5 @@
 from rich import print # Importa o print da biblioteca rich para impressão formatada. Certifique-se de que a biblioteca rich está instalada via pip (pip install rich)
+from rich import inspect # Importa a funcionalidade de inspeção da biblioteca rich para inspeção avançada de objetos.
 
 class ContaBancaria:
     """
@@ -33,3 +34,5 @@ c1.sacar(200.0)
 print(c1) # Imprime a representação da conta bancária
 print(c1.__doc__) # Imprime a docstring da classe ContaBancaria
 print(c1.verificar_saldo()) # Verifica o saldo da conta bancária
+
+inspect(c1) # Inspeciona o objeto c1 e imprime seus atributos e métodos disponíveis usando a biblioteca rich para formatação.
