@@ -19,3 +19,6 @@ class Churrasco:
 
 c1 = Churrasco("Churrasco de Aniversário", 15)
 print(c1.analisar())
+
+c2 = Churrasco("Churrasco de Confraternização", 30)
+print(c2.analisar())
