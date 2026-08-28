@@ -12,12 +12,17 @@ class Produto:
         self.preco = preco
     
     def etiqueta(self):
-        texto = f"{self.nome}\n" f"{'-' * 40}\n" f"{self.preco:.2f}"
-        texto_centralizado = Align.center(texto)
-        caixa = Panel(texto_centralizado, title="Produto", width=50)
+        conteudo = f"{self.nome.center(30, ' ')}" # Centraliza o nome do produto em uma largura de 30 caracteres, preenchendo com espaços.
+        conteudo += f"{'-' * 30}" # Adiciona uma linha de separação de 30 caracteres usando o caractere '-'.
+        precoformatado = f"R$ {self.preco:.2f}" # Formata o preço do produto para duas casas decimais e adiciona o símbolo de moeda "R$".
+        conteudo += f"{precoformatado.center(30, ' ')}" # Centraliza o preço formatado em uma largura de 30 caracteres, preenchendo com espaços.
+        caixa = Panel(conteudo, title="Produto", width=34) # Cria um painel com o conteúdo formatado, adicionando um título "Produto" e definindo a largura do painel para 34 caracteres.
 
         print(caixa)
 
 
 p1 = Produto("Camiseta", 50.00)
 print(p1.etiqueta())
+
+p2 = Produto("Calça Jeans", 120.00)
+print(p2.etiqueta())
