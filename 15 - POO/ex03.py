@@ -13,12 +13,12 @@ class ContaBancaria:
 
     def depositar(self, valor): # REPARE que o primeiro parâmetro é sempre self
         self.saldo += valor
-        print(f"Depósito de R${valor:,.2f} realizado com sucesso.") # usado o ,.2f para formatar o número com vírgula como separador de milhar e 2 casas decimais
+        print(f"[green]Depósito de R${valor:,.2f} realizado com sucesso.[/green]") # usado o ,.2f para formatar o número com vírgula como separador de milhar e 2 casas decimais
 
     def sacar(self, valor): # Self representa a própria instância da classe
         if 0 < valor <= self.saldo:
             self.saldo -= valor
-            print(f"[green]Saque de R${valor:,.2f} realizado com sucesso.[/green]") # o [green] [/green] é usado para colorir o texto de verde na impressão. Somente funciona com a biblioteca rich.
+            print(f"[red]Saque de R${valor:,.2f} realizado com sucesso.[/red]") # o [red] [/red] é usado para colorir o texto de vermelho na impressão. Somente funciona com a biblioteca rich.
         else:
             print(f"Saldo insuficiente na conta {self.id} para saque ou valor inválido.")
 
