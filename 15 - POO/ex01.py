@@ -10,7 +10,7 @@ class Pessoa:
     - i: Idade da pessoa (inteiro)
     - s: Sexo da pessoa (string)
     """
-    # Docstring da classe Pessoa acada de ser criada.
+    # Docstring da classe Pessoa acaba de ser criada.
 
     # Método construtor que inicializa os atributos da classe
     def __init__(self, n = "", i = 0, s = ""):
