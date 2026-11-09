@@ -26,7 +26,7 @@ class ContaBancaria:
         return f" O saldo da conta é: R${self.saldo:,.2f} :grinning:" # O :grinning: é um emoji suportado pela biblioteca rich. Escrever, no terminal, python rich.emojis para mais emojis.
     
     def __str__(self): # Representação da conta bancária
-        return f"A conta Bancária de ID: {self.id}, do titular: {self.nome}, tem saldo de saldo: R${self.saldo:,.2f}."
+        return f"A conta Bancária de ID: {self.id}, do titular: {self.nome}, tem saldo de: R${self.saldo:,.2f}."
 
 c1 = ContaBancaria(id=1, nome="Vitor", saldo=1000.0)
 c1.depositar(500.0)
