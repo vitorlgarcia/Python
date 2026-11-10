@@ -1,3 +1,5 @@
+# Desafio 5 - Fazer uma tabela de jogos favoritos de um jogador, com o nome real e o nick do jogador. A tabela deve ser exibida em ordem alfabética dos jogos favoritos.
+
 from rich import print
 from rich.panel import Panel
 
