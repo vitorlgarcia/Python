@@ -15,7 +15,7 @@ class Churrasco:
         texto = f"Analisando [green]{self.titulo}[/] com [blue]{self.quantidade} participantes[/]\n" f"Cada participante comerá {consumo:.3f}Kg e cada Kg custa R${custo:.2f}\n" f"Recomendo comprar [blue]{consumo * self.quantidade: .2f}Kg[/] de carne\n" f"Custo total será de [green]R${preco:.2f}[/]\n" f"Cada pessoa pagará [yellow]R$ {preco / self.quantidade:.2f}[/] para participar"
 
         caixa = Panel(texto, title=f"{self.titulo}", width=60)
-        print(caixa)
+        return caixa
 
 c1 = Churrasco("Churrasco de Aniversário", 15)
 print(c1.analisar())
