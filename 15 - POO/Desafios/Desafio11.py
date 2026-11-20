@@ -1,4 +1,6 @@
 # HERANÇA E ABSTRAÇÃO
+# Calcular o salário de um trabalhador horista e mensalista, tomando os descontos do INSS. Salario minimo e o percentual de INSS já foram definidos inicialmente.
+
 from abc import ABC, abstractmethod
 from rich import inspect, print
 from rich.panel import Panel
